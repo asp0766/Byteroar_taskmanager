@@ -19,7 +19,7 @@ function GetUser() {
       <h2>Fetch User by ID</h2>
 
       <input
-        type="number"
+        type="text"
         placeholder="Enter ID"
         value={id}
         onChange={(e) => setId(e.target.value)}
@@ -38,7 +38,7 @@ function GetUser() {
       {user && (
   <div className="card" style={{ marginTop: "30px" }}>
     <h3>Name: {user.name}</h3>
-    <p>User ID: {user.id}</p>
+    <p>User ID: {user.UID}</p>
     <p>Role: {user.Role}</p>
   </div>
 )}
